@@ -84,13 +84,16 @@ namespace SpeechCustomUi
 
         private void doTask(string text)
         {
-            if(text.Contains("weather"))
+            if (text.Contains("weather"))
             {
                 currentWeather.get();
                 weatherq = true;
             }
             else
+            {
+                weatherq = false;
                 currentEvent.create(text, DateTimeOffset.Now);
+            }
         }
         private void SetPanel(StackPanel panel)
         {
