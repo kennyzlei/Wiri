@@ -15,6 +15,10 @@ namespace SpeechCustomUi
     public sealed partial class MainPage : Page
     {
         private Event currentEvent = new Event();
+
+        private Weather currentWeather = new Weather();
+        private bool weatherq = false;
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -82,7 +86,8 @@ namespace SpeechCustomUi
         {
             if(text.Contains("weather"))
             {
-
+                currentWeather.get();
+                weatherq = true;
             }
             else
                 currentEvent.create(text, DateTimeOffset.Now);
@@ -100,7 +105,6 @@ namespace SpeechCustomUi
             panel.Visibility = Visibility.Visible;
             CancelButton.Visibility = Visibility.Visible;
         }
-
         
         private async void SpeakButton_Click(object sender, RoutedEventArgs e)
         {
@@ -114,7 +118,12 @@ namespace SpeechCustomUi
                 var result = await SR.RecognizeSpeechToTextAsync();
 
                 // Show the TextConfidence.
-                ConfidenceText.Text = getConfidence(result.TextConfidence);
+                if(weatherq)
+                {
+                    ConfidenceText.Text = Globals.weather;
+                }
+                else
+                    ConfidenceText.Text = "";
 
                 // Display the text.
                 FinalResult.Text = result.Text;
@@ -124,7 +133,6 @@ namespace SpeechCustomUi
 
                 // Fill a string array with the alternate results.
                 var alternates = result.GetAlternates(5);
-
                 doTask(Globals.text);
                 if (alternates.Count > 1)
                 {

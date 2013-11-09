@@ -8,10 +8,10 @@ using Windows.Devices.Geolocation;
 
 namespace SpeechCustomUi
 {
-    class Weather
+    public class Weather
     {
         //get weather at current location
-        async void get()
+        public async void get()
         {
             Geolocator locator = new Geolocator();
             Geoposition position = await locator.GetGeopositionAsync();
