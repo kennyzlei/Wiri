@@ -21,5 +21,17 @@ namespace SpeechCustomUi
             }
         }
 
+        private static string _weather { get; set; }
+        public static string weather
+        {
+            get
+            {
+                return _weather;
+            }
+            set
+            {
+                _weather = value;
+            }
+        }
     }
 }

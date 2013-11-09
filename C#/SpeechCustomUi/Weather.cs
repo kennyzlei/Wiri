@@ -24,7 +24,7 @@ namespace SpeechCustomUi
             reader.ReadToFollowing("skytext");
             String sky = reader.Value;
 
-            //return ("It is currently " + temp + "°F and " + sky);
+            Globals.weather = "It is currently " + temp + "°F and " + sky;
         }
     }
 }
