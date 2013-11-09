@@ -80,7 +80,12 @@ namespace SpeechCustomUi
 
         private void doTask(string text)
         {
-            currentEvent.create(text, DateTimeOffset.Now);
+            if(text.Contains("weather"))
+            {
+
+            }
+            else
+                currentEvent.create(text, DateTimeOffset.Now);
         }
         private void SetPanel(StackPanel panel)
         {
