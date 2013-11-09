@@ -21,7 +21,8 @@ namespace SpeechCustomUi
             reader.ReadToFollowing("current");
             reader.MoveToFirstAttribute();
             String temp = reader.Value;
-            reader.ReadToFollowing("skytext");
+            reader.MoveToNextAttribute();
+            reader.MoveToNextAttribute();
             String sky = reader.Value;
 
             Globals.weather = "It is currently " + temp + "°F and " + sky;
