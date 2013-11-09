@@ -1,0 +1,14 @@
+﻿<Application
+    x:Class="Wiri.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Wiri"
+    xmlns:localData="using:Wiri.Data">
+
+    <Application.Resources>
+        <!-- Application-specific resources -->
+
+        <x:String x:Key="AppName">Wiri</x:String>
+
+    </Application.Resources>
+</Application>
