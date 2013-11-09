@@ -9,10 +9,10 @@ using Windows.ApplicationModel.Appointments.AppointmentsProvider;
 
 namespace SpeechCustomUi
 {
-    class Event
+    public class Event
     {
         //create event and add to calendar
-        async void create(String subject, DateTimeOffset time)
+        public async void create(String subject, DateTimeOffset time)
         {
             Rect rect = new Rect(1, 1, 1, 1);
 

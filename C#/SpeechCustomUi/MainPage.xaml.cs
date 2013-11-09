@@ -14,6 +14,7 @@ namespace SpeechCustomUi
 {
     public sealed partial class MainPage : Page
     {
+        private Event currentEvent = new Event();
         public MainPage()
         {
             this.InitializeComponent();
@@ -77,6 +78,10 @@ namespace SpeechCustomUi
             }
         }
 
+        private void doTask(string text)
+        {
+            currentEvent.create(text, DateTimeOffset.Now);
+        }
         private void SetPanel(StackPanel panel)
         {
             // Hide all the panels.
@@ -109,8 +114,13 @@ namespace SpeechCustomUi
                 // Display the text.
                 FinalResult.Text = result.Text;
 
+                //place text in a Global Variable
+                Globals.text = FinalResult.Text;
+
                 // Fill a string array with the alternate results.
                 var alternates = result.GetAlternates(5);
+
+                doTask(Globals.text);
                 if (alternates.Count > 1)
                 {
                     string[] s = new string[alternates.Count];

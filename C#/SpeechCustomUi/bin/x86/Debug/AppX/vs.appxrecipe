@@ -14,16 +14,16 @@
     <RegisteredVersion>1.1.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\t-daboon\Documents\Wiri\C#\SpeechCustomUi\bin\x86\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\t-daboon\Documents\GitHub\Wiri\C#\SpeechCustomUi\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-11-09T04:35:09.650</Modified>
+      <Modified>2013-11-09T19:49:58.745</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\t-daboon\Documents\Wiri\C#\SpeechCustomUi\bin\x86\Debug\SpeechCustomUi.exe">
+    <AppxPackagedFile Include="C:\Users\t-daboon\Documents\GitHub\Wiri\C#\SpeechCustomUi\bin\x86\Debug\SpeechCustomUi.exe">
       <PackagePath>SpeechCustomUi.exe</PackagePath>
-      <Modified>2013-11-09T04:34:56.477</Modified>
+      <Modified>2013-11-09T19:49:45.121</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Bing.Speech\1.0\References\commonconfiguration\x86\Bing.Speech.winmd">
       <PackagePath>Bing.Speech.winmd</PackagePath>
@@ -73,45 +73,45 @@
       <PackagePath>Bing.Speech.Xaml.SpeechRecognizerUx\VoiceUIControl.xaml</PackagePath>
       <Modified>2013-11-09T01:03:28.856</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\t-daboon\Documents\Wiri\C#\SpeechCustomUi\Assets\Logo.png">
+    <AppxPackagedFile Include="C:\Users\t-daboon\Documents\GitHub\Wiri\C#\SpeechCustomUi\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-11-09T01:05:27.105</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\t-daboon\Documents\Wiri\C#\SpeechCustomUi\Assets\SmallLogo.png">
+    <AppxPackagedFile Include="C:\Users\t-daboon\Documents\GitHub\Wiri\C#\SpeechCustomUi\Assets\SmallLogo.png">
       <PackagePath>Assets\SmallLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-11-09T01:05:27.121</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\t-daboon\Documents\Wiri\C#\SpeechCustomUi\Assets\SplashScreen.png">
+    <AppxPackagedFile Include="C:\Users\t-daboon\Documents\GitHub\Wiri\C#\SpeechCustomUi\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-11-09T01:05:27.137</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\t-daboon\Documents\Wiri\C#\SpeechCustomUi\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\t-daboon\Documents\GitHub\Wiri\C#\SpeechCustomUi\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-11-09T01:05:27.153</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\t-daboon\Documents\Wiri\C#\SpeechCustomUi\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\t-daboon\Documents\GitHub\Wiri\C#\SpeechCustomUi\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
       <Modified>2013-11-09T03:33:57.863</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\t-daboon\Documents\Wiri\C#\SpeechCustomUi\bin\x86\Debug\Common\StandardStyles.xbf">
+    <AppxPackagedFile Include="C:\Users\t-daboon\Documents\GitHub\Wiri\C#\SpeechCustomUi\bin\x86\Debug\Common\StandardStyles.xbf">
       <PackagePath>Common\StandardStyles.xbf</PackagePath>
       <Modified>2013-11-09T03:33:57.870</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\t-daboon\Documents\Wiri\C#\SpeechCustomUi\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\t-daboon\Documents\GitHub\Wiri\C#\SpeechCustomUi\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
       <Modified>2013-11-09T03:33:57.877</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\t-daboon\Documents\Wiri\C#\SpeechCustomUi\bin\x86\Debug\Bing.Speech.Xaml.SpeechRecognizerUx\VoiceUIControl.xbf">
+    <AppxPackagedFile Include="C:\Users\t-daboon\Documents\GitHub\Wiri\C#\SpeechCustomUi\bin\x86\Debug\Bing.Speech.Xaml.SpeechRecognizerUx\VoiceUIControl.xbf">
       <PackagePath>Bing.Speech.Xaml.SpeechRecognizerUx\VoiceUIControl.xbf</PackagePath>
-      <Modified>2013-11-09T04:34:55.573</Modified>
+      <Modified>2013-11-09T19:49:44.218</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\t-daboon\Documents\Wiri\C#\SpeechCustomUi\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\t-daboon\Documents\GitHub\Wiri\C#\SpeechCustomUi\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-11-09T03:34:00.065</Modified>
+      <Modified>2013-11-09T19:43:11.415</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
