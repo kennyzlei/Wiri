@@ -1,0 +1,11 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\users\t-daboon\documents\wiri\c#\speechcustomui\obj\x86\debug\intermediatexaml\speechcustomui.exe" HashGuid="9c88bdf4-79db-eaec-c9d1-bb9f88e69e0e" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\bing.speech\1.0\references\commonconfiguration\x86\bing.speech.winmd" HashGuid="78cc0b18-1898-b560-d95b-a2c1b0272c37" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\bing.speech\1.0\references\commonconfiguration\x86\bing.speech.xaml.speechrecognizerux.dll" HashGuid="1fe09c7b-8c1f-6385-05e4-0ad08f80efa2" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\bing.speech\1.0\references\commonconfiguration\x86\microsoft.bing.platform.logging.clientwinrt.dll" HashGuid="880dc8eb-4a76-a58d-fe87-39f8d9a71513" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\bing.speech\1.0\references\commonconfiguration\x86\microsoft.speech.voiceservice.audio.winmd" HashGuid="31e816d9-de92-911f-9736-c03382b1d675" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\bing.speech\1.0\references\commonconfiguration\x86\microsoft.speech.voiceservice.mssraudio.winmd" HashGuid="31af4e04-488e-c9c0-e19e-64d746b95264" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

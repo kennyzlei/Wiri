@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="2521ff36-65d5-4058-8a52-91fea50d8be7" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://2521ff36-65d5-4058-8a52-91fea50d8be7/Files/App.xbf">
+				<Candidate type="Path">
+					<Value>App.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainPage.xbf" uri="ms-resource://2521ff36-65d5-4058-8a52-91fea50d8be7/Files/MainPage.xbf">
+				<Candidate type="Path">
+					<Value>MainPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="Logo.png" uri="ms-resource://2521ff36-65d5-4058-8a52-91fea50d8be7/Files/Assets/Logo.png">
+					<Candidate type="Path">
+						<Value>Assets\Logo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SmallLogo.png" uri="ms-resource://2521ff36-65d5-4058-8a52-91fea50d8be7/Files/Assets/SmallLogo.png">
+					<Candidate type="Path">
+						<Value>Assets\SmallLogo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://2521ff36-65d5-4058-8a52-91fea50d8be7/Files/Assets/SplashScreen.png">
+					<Candidate type="Path">
+						<Value>Assets\SplashScreen.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://2521ff36-65d5-4058-8a52-91fea50d8be7/Files/Assets/StoreLogo.png">
+					<Candidate type="Path">
+						<Value>Assets\StoreLogo.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Bing.Speech.Xaml.SpeechRecognizerUx">
+				<NamedResource name="VoiceUIControl.xaml" uri="ms-resource://2521ff36-65d5-4058-8a52-91fea50d8be7/Files/Bing.Speech.Xaml.SpeechRecognizerUx/VoiceUIControl.xaml">
+					<Candidate type="Path">
+						<Value>Bing.Speech.Xaml.SpeechRecognizerUx\VoiceUIControl.xaml</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="VoiceUIControl.xbf" uri="ms-resource://2521ff36-65d5-4058-8a52-91fea50d8be7/Files/Bing.Speech.Xaml.SpeechRecognizerUx/VoiceUIControl.xbf">
+					<Candidate type="Path">
+						<Value>Bing.Speech.Xaml.SpeechRecognizerUx\VoiceUIControl.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="JavaScript">
+					<ResourceMapSubtree name="css">
+						<NamedResource name="voiceuicontrol.css" uri="ms-resource://2521ff36-65d5-4058-8a52-91fea50d8be7/Files/Bing.Speech.Xaml.SpeechRecognizerUx/JavaScript/css/voiceuicontrol.css">
+							<Candidate type="Path">
+								<Value>Bing.Speech.Xaml.SpeechRecognizerUx\JavaScript\css\voiceuicontrol.css</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="js">
+						<NamedResource name="voiceuicontrol.js" uri="ms-resource://2521ff36-65d5-4058-8a52-91fea50d8be7/Files/Bing.Speech.Xaml.SpeechRecognizerUx/JavaScript/js/voiceuicontrol.js">
+							<Candidate type="Path">
+								<Value>Bing.Speech.Xaml.SpeechRecognizerUx\JavaScript\js\voiceuicontrol.js</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Common">
+				<NamedResource name="StandardStyles.xbf" uri="ms-resource://2521ff36-65d5-4058-8a52-91fea50d8be7/Files/Common/StandardStyles.xbf">
+					<Candidate type="Path">
+						<Value>Common\StandardStyles.xbf</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:ImageSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=EB87627F1FAC8F417DDC560F58ECEDC8" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/0f42f23f-7cc7-474a-aa23-b6ed8ca59481Combined.css,0:ImageSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=59AF12CEA39A0C1AEAA6487FF1817969" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Bing Speech Recognition Control custom UI sample</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Bing Speech Recognition Control custom UI sample</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Bing Speech
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Speech recognition
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">10/29/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Speech-Recognition-19c452b4">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p>This sample demonstrates the Bing Speech Recognition Control by creating an immersive&nbsp;custom UI instead of using&nbsp;the standard SpeechRecognizerUx control. The UI prompts the user to speak, updates to show status, and then shows the result of speech
+ recognition, along with a list of alternative possible results.</p>
+<p>&nbsp;</p>
+<h1><span>Building the Sample</span></h1>
+<p>To build this sample you must have the Bing Speech Recognition Control installed. You can install the Windows 8 version from
+<a href="http://visualstudiogallery.msdn.microsoft.com/7a054b83-f890-41b5-909b-5d849e1a32b6">
+http://visualstudiogallery.msdn.microsoft.com/7a054b83-f890-41b5-909b-5d849e1a32b6</a>&nbsp;or the Windows 8.1 version from
+<a href="http://visualstudiogallery.msdn.microsoft.com/521cf616-a9a8-4d99-b5d9-92b539d9df82">
+http://visualstudiogallery.msdn.microsoft.com/521cf616-a9a8-4d99-b5d9-92b539d9df82</a></p>
+<p>You must also subscribe to the control on the Windows Azure Data Marketplace at
+<a href="http://code.msdn.microsoft.com/Speech-Recognition-19c452b4/https://datamarket.azure.com/dataset/bing/speechcontrol">http://code.msdn.microsoft.com/Speech-Recognition-19c452b4/https://datamarket.azure.com/dataset/bing/speechcontrol</a>&nbsp;to obtain your Client ID and Client Secret, which are required &nbsp;to run the control.</p>
+<p><span style="font-size:20px; font-weight:bold">Description</span></p>
+<p>The application uses a series of containers (StackPanels in XAML or DIVs in HTML) to represent different UI states, with each container having the appropriate text, buttons, and other&nbsp;UI elements for&nbsp;that state. When the user hits the microphone
+ button, it triggers the SpeechRecognizer.RecognizeSpeechToTextAsync() method and starts speech recognition. The app then uses the SpeechRecognizer.AudioCaptureStateChanged event to track progress, and switches UI containers each time the event fires. It also
+ shows and hides the Stop and Cancel buttons as appropriate.</p>
+<p>During the Listening phase, the app uses the SpeechRecognizer.AudioLevelChanged event handler to change the opacity of the word &quot;VOLUME&quot; in response to real-time audio level changes.</p>
+<p>When finished, the app shows the final 'best guess' interpretation of what the user said, along with an indication of its expected level of accuray, based on the SpeechRecognitionResult.TextConfidence property. It also shows a drop down list of alternate
+ text results. If the user picks an alternate from the list, it becomes the main result.</p>
+<h1>More Information</h1>
+<p>For more information, see:</p>
+<ul>
+<li><a href="http://msdn.microsoft.com/en-us/library/dn434583.aspx">The Bing Speech Recognition Control
+</a></li><li><a href="http://msdn.microsoft.com/en-us/library/dn467590.aspx">How to: Add the Bing Speech Recognition Control to an application with a custom UI</a>
+</li><li><a href="http://msdn.microsoft.com/en-us/library/dn467592.aspx">How to: Enable a project for the Bing Speech Recognition Control</a>
+</li><li><a href="http://msdn.microsoft.com/en-us/library/dn434589.aspx">SpeechRecognizer class
+</a></li></ul>
+
+</div>
+
+
+    </div>
+</body>
+</html>
