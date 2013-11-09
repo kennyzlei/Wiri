@@ -27,8 +27,8 @@
                        FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" />
             <!--Starts speech recognition, but may not be ready immediately. -->
             <Button x:Name="SpeakButton" Click="SpeakButton_Click" 
-                    Style="{StaticResource MicrophoneAppBarButtonStyle}" 
-                    HorizontalAlignment="Center" />
+                    Style="{StaticResource MicrophoneAppBarButtonStyle}" Height="200" Width="200" 
+                    HorizontalAlignment="Center" VerticalAlignment="Center" />
         </StackPanel>
 
         <!--Panel to show while initializing the SpeechRecognizer.
